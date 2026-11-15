@@ -191,3 +191,24 @@ go test -race ./...
 | `elem` | widget renderers |
 | `ui` | popup toolkit: context menus with submenus, forms, lists, dialogs |
 | `app` | main loop, view mode, editor, property forms |
+
+## Install
+
+[![nix](https://github.com/Szmelc-INC/Tesserae/actions/workflows/nix.yml/badge.svg)](https://github.com/Szmelc-INC/Tesserae/actions/workflows/nix.yml)
+
+**Arch Linux** via [SAUR](https://github.com/Szmelc-INC/SAUR):
+
+```sh
+curl -fsSL https://szmelc-inc.github.io/SAUR/add | sudo bash   # once: adds [saur] to pacman.conf
+sudo pacman -S tesserae-git
+```
+
+**Nix**:
+
+```sh
+nix run github:Szmelc-INC/Tesserae
+nix profile install github:Szmelc-INC/Tesserae
+nix develop          # dev shell inside a clone
+```
+
+Then run `tesserae --help`.

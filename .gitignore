@@ -20,3 +20,8 @@ agent.md
 *.swp
 *~
 .DS_Store
+
+# makepkg
+/src/
+/pkg/
+/*.pkg.tar.*
