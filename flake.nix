@@ -14,7 +14,7 @@
           pname = "tesserae";
           version = "1.0.0-unstable-${self.shortRev or self.dirtyShortRev or "dirty"}";
           src = ./.;
-          vendorHash = pkgs.lib.fakeHash;
+          vendorHash = "sha256-TnLRlX5m05ukXzgHqObVsxIfiV91FpdljIg1QbVRasY=";
           subPackages = [ "." ];
           env.CGO_ENABLED = 0;
           ldflags = [ "-s" "-w" ];
